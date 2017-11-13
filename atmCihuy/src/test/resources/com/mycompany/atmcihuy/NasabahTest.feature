@@ -23,3 +23,18 @@ Fitur : Pengecekan Saldo
 		Dengan pilihan menu Pengecekan Saldo maka sistem akan mengecek tabungan nasabah
 		Ketika memilih menu pengecekan saldo
 		Maka respon "Menampilkan informasi Saldo"
+
+Fitur : Penarikan Tunai
+        PenarikanTunai
+
+        @Berhasil
+	Skenario: Memasukkan Nominal
+		Dengan Nominal yang dimasukkan nasabah dan akan dilakukan validasi oleh sistem
+		Ketika Nominal yang dimasukkan lebih kecil sama dengan dari saldo nasabah
+		Maka respon "Penarikan berhasil"
+
+        @Gagal
+        Skenario: Memasukan Nominal
+		Dengan Nominal yang dimasukkan nasabah dan akan dilakukan validasi oleh sistem
+		Ketika Nominal yang dimasukkan lebih besar dari saldo nasabah
+		Maka respon gagal dengan pesan "Saldo tidak mencukupi"
