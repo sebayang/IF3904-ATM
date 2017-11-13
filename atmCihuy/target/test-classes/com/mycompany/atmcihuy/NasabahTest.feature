@@ -1,16 +1,16 @@
 # language: id
 
-Fitur: Mengelola User
-	Mengelola data user
+Fitur: Login
+	Login
 
 	@Normal
-	Skenario: Memasukan User Baru 
-		Dengan Data user baru yang akan dimasukan tersedia dan tidak duplikat dengan data yang telah ada di sistem
-		Ketika Memasukan data user dengan nama "badu"
-		Maka respon "user sukses dimasukan"
+	Skenario: Memasukkan PIN
+		Dengan PIN yang akan dimasukkan nasabah dan akan dilakukan validasi oleh sistem
+		Ketika Memasukan PIN yang valid
+		Maka respon "Login sukses"
 
         @Duplikat
-        Skenario: Memasukan User Baru 
-		Dengan Data user baru yang akan dimasukan tersedia dan tidak duplikat dengan data yang telah ada di sistem
-		Ketika Memasukan data user dengan nama "deni"
-		Maka respon gagal dengan pesan "duplicate"
+        Skenario: Memasukan PIN 
+		Dengan PIN yang akan dimasukkan nasabah dan akan dilakukan validasi oleh sistem
+		Ketika Memasukan PIN yang tidak valid
+		Maka respon gagal dengan pesan "Login gagal"
