@@ -5,7 +5,11 @@
  */
 package com.mycompany.atmcihuy;
 
+<<<<<<< HEAD
 
+=======
+import metrics.*;
+>>>>>>> 845dd7178626a4294a1c88e578eecdc4244da0d3
 
 /**
  *
