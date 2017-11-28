@@ -32,7 +32,7 @@ public class NasabahConteks {
     @Ketika("^Memasukan data user dengan nama \"([^\"]*)\"$")
     public void memasukan_data_user_dengan_nama(String arg1) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        respon =Nasabah.addUser(arg1);
+        //respon =Nasabah.addUser(arg1);
     }
 
     @Maka("^respon \"([^\"]*)\"$")
