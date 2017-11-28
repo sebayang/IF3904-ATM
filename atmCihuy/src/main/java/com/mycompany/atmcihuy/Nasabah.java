@@ -5,20 +5,52 @@
  */
 package com.mycompany.atmcihuy;
 
+
 /**
  *
  * @author User
  */
 public class Nasabah {
-    public static void main(String[] args) {
-        System.out.println("yoi gan");
+    String nama;
+    int noKartu;
+    int pin;
+    int saldo;
+
+    public Nasabah(String nama, int noKartu, int pin) {
+        this.nama = nama;
+        this.noKartu = noKartu;
+        this.pin = pin;
     }
-    
-    public static String addUser(String user){
-        if (user.equals("badu"))
-            return "user sukses dimasukan";
-        else
-            return "duplicate";
-                
+
+    public String getNama() {
+        return nama;
     }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public int getNoKartu() {
+        return noKartu;
+    }
+
+    public void setNoKartu(int noKartu) {
+        this.noKartu = noKartu;
+    }
+
+    public int getPin() {
+        return pin;
+    }
+
+    public void setPin(int pin) {
+        this.pin = pin;
+    }
+
+    public int getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(int saldo) {
+        this.saldo = saldo;
+    }    
 }

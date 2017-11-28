@@ -15,6 +15,14 @@ Fitur: Login
 		Ketika Memasukan PIN yang tidak valid
 		Maka respon gagal dengan pesan "Login gagal"
 
+Fitur : Transfer
+        
+        @Berhasil
+        Skenario: Memasukkan Nomor Rekening Tujuan
+                Dengan nomor rekening tujuan yang akan dimasukkan nasabah dan akan dilakukan validasi oleh sistem
+                Ketika memasukkan nomor rekening tujuan yang valid
+                Maka respon "Transfer sukses"
+
 Fitur : Pengecekan Saldo
         PengecekanSaldo
 
