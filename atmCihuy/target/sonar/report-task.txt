@@ -1,6 +1,0 @@
-projectKey=com.mycompany:atmCihuy
-serverUrl=http://localhost:9000
-serverVersion=6.7.0.33306
-dashboardUrl=http://localhost:9000/dashboard/index/com.mycompany:atmCihuy
-ceTaskId=AV-zMER627hKEYkAedd3
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AV-zMER627hKEYkAedd3
