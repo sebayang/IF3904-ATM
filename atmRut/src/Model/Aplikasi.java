@@ -35,8 +35,17 @@ public class Aplikasi {
         }
     }
     
-    public void updateSaldo(Nasabah nasabah,int saldo){
-        data.updateSaldo(nasabah.getNorek(), saldo);
+    public void updateSaldo(int norek,int saldo){
+        data.updateSaldo(norek, saldo);
+    }
+    
+    public Nasabah getNasabahByNorek(int norek){
+        Nasabah p = data.getByNorek(norek);
+        if (p != null){
+            return p;
+        }else{
+            return null;
+        }
     }
     
     public static void main(String[] args) {

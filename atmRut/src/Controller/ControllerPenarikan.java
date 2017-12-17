@@ -40,7 +40,7 @@ public class ControllerPenarikan implements ActionListener {
         } else if (source.equals(view.getBtnLanjutkan())) {
             if (nasabah.getSaldo() - Integer.parseInt(view.getNominal()) > 50000) {
                 int saldo = nasabah.getSaldo() - Integer.parseInt(view.getNominal());
-                model.updateSaldo(nasabah, saldo);
+                model.updateSaldo(nasabah.getNorek(), saldo);
                 JOptionPane.showMessageDialog(view, "Penarikan Berhasil");
                 new ControllerLogin(model);
                 view.dispose();

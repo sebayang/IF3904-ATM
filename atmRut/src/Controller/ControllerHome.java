@@ -47,6 +47,8 @@ public class ControllerHome implements ActionListener {
             view.dispose();
         } else if (source.equals(view.getBtnPenarikan())){
             new ControllerPenarikan(model,nasabah);
+        } else if(source.equals(view.getBtnTransfer())){
+            new ControllerTransfer(model,nasabah);
         }
     }
 }

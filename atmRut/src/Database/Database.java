@@ -72,6 +72,30 @@ public class Database {
 
         }
     }
+    public Nasabah getByNorek(int norek){
+        Nasabah p = null;
+        try {
+
+            String query = "SELECT * FROM NASABAH where norek = '"
+                    + norek + "'";
+            ResultSet rs = statement.executeQuery(query);
+
+            while (rs.next()) {
+                p = new Nasabah();
+                p.setNorek(rs.getInt(1));
+                p.setPin(rs.getInt(2));
+                p.setNama(rs.getString(3));
+                p.setSaldo(rs.getInt(4));
+
+            }
+
+            return p;
+        } catch (SQLException ex) {
+            System.out.println("Login gagal " + ex);
+            return null;
+
+        }
+    }
 
     public void updateSaldo(int norek,int saldo) {
         try {
@@ -81,4 +105,5 @@ public class Database {
             System.out.println("update data gagal" + ex);
         }
     }
+    
 }
