@@ -19,6 +19,7 @@ import java.util.List;
 import javax.swing.JOptionPane;
 import Model.Nasabah;
 import Model.Aplikasi;
+
 public class Database {
 
     private String server = "jdbc:mysql://localhost:3306/atm?zeroDateTimeBehavior=convertToNull";
@@ -28,9 +29,9 @@ public class Database {
     Connection connection;
 
     public Database() {
-        try{
+        try {
             Class.forName("com.mysql.jdbc.Driver");
-        }catch(Exception e){
+        } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
         }
         connect();
@@ -45,7 +46,7 @@ public class Database {
             System.out.println("Tidak ");
         }
     }
-    
+
     public Nasabah getNasabah(int norek, int pin) {
         Nasabah p = null;
         try {
@@ -71,5 +72,13 @@ public class Database {
 
         }
     }
-    
+
+    public void updateSaldo(int norek,int saldo) {
+        try {
+            String query = "UPDATE NASABAH SET saldo = '" + saldo +  "' where norek = '" + norek + "'";
+            statement.execute(query);
+        } catch (SQLException ex) {
+            System.out.println("update data gagal" + ex);
+        }
+    }
 }

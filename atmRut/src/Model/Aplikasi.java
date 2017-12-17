@@ -35,6 +35,10 @@ public class Aplikasi {
         }
     }
     
+    public void updateSaldo(Nasabah nasabah,int saldo){
+        data.updateSaldo(nasabah.getNorek(), saldo);
+    }
+    
     public static void main(String[] args) {
         Aplikasi a = new Aplikasi();
         new ControllerLogin(a);

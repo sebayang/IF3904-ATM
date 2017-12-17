@@ -45,6 +45,8 @@ public class ControllerHome implements ActionListener {
         } else if (source.equals(view.getBtnPengecekan())) {
             new ControllerPengecekan(model,nasabah);
             view.dispose();
+        } else if (source.equals(view.getBtnPenarikan())){
+            new ControllerPenarikan(model,nasabah);
         }
     }
 }
