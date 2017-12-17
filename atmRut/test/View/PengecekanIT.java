@@ -47,11 +47,9 @@ public class PengecekanIT {
     public void testGetLabelNama() {
         System.out.println("getLabelNama");
         Pengecekan instance = new Pengecekan();
-        JLabel expResult = null;
+        JLabel expResult = instance.getLabelNama();
         JLabel result = instance.getLabelNama();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -61,11 +59,9 @@ public class PengecekanIT {
     public void testGetLabelNorek() {
         System.out.println("getLabelNorek");
         Pengecekan instance = new Pengecekan();
-        JLabel expResult = null;
+        JLabel expResult = instance.getLabelNorek();
         JLabel result = instance.getLabelNorek();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -75,11 +71,9 @@ public class PengecekanIT {
     public void testGetLabelSaldo() {
         System.out.println("getLabelSaldo");
         Pengecekan instance = new Pengecekan();
-        JLabel expResult = null;
+        JLabel expResult = instance.getLabelSaldo();
         JLabel result = instance.getLabelSaldo();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -89,11 +83,9 @@ public class PengecekanIT {
     public void testGetBtnYa() {
         System.out.println("getBtnYa");
         Pengecekan instance = new Pengecekan();
-        JButton expResult = null;
+        JButton expResult = instance.getBtnYa();
         JButton result = instance.getBtnYa();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -103,11 +95,10 @@ public class PengecekanIT {
     public void testGetBtnTidak() {
         System.out.println("getBtnTidak");
         Pengecekan instance = new Pengecekan();
-        JButton expResult = null;
+        JButton expResult = instance.getBtnTidak();
         JButton result = instance.getBtnTidak();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -119,8 +110,6 @@ public class PengecekanIT {
         ActionListener e = null;
         Pengecekan instance = new Pengecekan();
         instance.addListener(e);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }

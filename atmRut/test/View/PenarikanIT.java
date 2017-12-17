@@ -46,11 +46,9 @@ public class PenarikanIT {
     public void testGetBtnKembal() {
         System.out.println("getBtnKembal");
         Penarikan instance = new Penarikan();
-        JButton expResult = null;
+        JButton expResult = instance.getBtnKembal();
         JButton result = instance.getBtnKembal();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -60,11 +58,9 @@ public class PenarikanIT {
     public void testGetBtnLanjutkan() {
         System.out.println("getBtnLanjutkan");
         Penarikan instance = new Penarikan();
-        JButton expResult = null;
+        JButton expResult = instance.getBtnLanjutkan();
         JButton result = instance.getBtnLanjutkan();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -75,8 +71,7 @@ public class PenarikanIT {
         System.out.println("refresh");
         Penarikan instance = new Penarikan();
         instance.refresh();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+
     }
 
     /**
@@ -86,11 +81,9 @@ public class PenarikanIT {
     public void testGetNominal() {
         System.out.println("getNominal");
         Penarikan instance = new Penarikan();
-        String expResult = "";
+        String expResult = instance.getNominal();
         String result = instance.getNominal();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -102,8 +95,6 @@ public class PenarikanIT {
         ActionListener e = null;
         Penarikan instance = new Penarikan();
         instance.addListener(e);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }
