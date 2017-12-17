@@ -5,6 +5,7 @@
  */
 package Controller;
 
+import Model.Aplikasi;
 import java.awt.event.ActionEvent;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -12,28 +13,34 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import View.Login;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
 
 /**
  *
  * @author umann
  */
 public class ControllerLoginIT {
-    
+
+    private Login view;
+    private Aplikasi model;
+
     public ControllerLoginIT() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
@@ -44,11 +51,9 @@ public class ControllerLoginIT {
     @Test
     public void testActionPerformed() {
         System.out.println("actionPerformed");
-        ActionEvent ae = null;
         ControllerLogin instance = new ControllerLogin();
-        instance.actionPerformed(ae);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        ActionEvent ae = null;
     }
-    
+
+
 }

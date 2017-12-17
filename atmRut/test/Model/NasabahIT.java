@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
  * @author umann
  */
 public class NasabahIT {
-    
+    Nasabah Test = new Nasabah(1301154116,1207,50000000,"Febrio Ibrahim s");
     public NasabahIT() {
     }
     
@@ -43,12 +43,9 @@ public class NasabahIT {
     @Test
     public void testGetNorek() {
         System.out.println("getNorek");
-        Nasabah instance = new Nasabah();
-        int expResult = 0;
-        int result = instance.getNorek();
+        int expResult = 1301154116;
+        int result = Test.getNorek();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -57,11 +54,9 @@ public class NasabahIT {
     @Test
     public void testSetNorek() {
         System.out.println("setNorek");
-        int norek = 0;
-        Nasabah instance = new Nasabah();
-        instance.setNorek(norek);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        int norek = 1301154116;
+        Test.setNorek(norek);
+
     }
 
     /**
@@ -70,12 +65,9 @@ public class NasabahIT {
     @Test
     public void testGetPin() {
         System.out.println("getPin");
-        Nasabah instance = new Nasabah();
-        int expResult = 0;
-        int result = instance.getPin();
+        int expResult = 1207;
+        int result = Test.getPin();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -84,11 +76,9 @@ public class NasabahIT {
     @Test
     public void testSetPin() {
         System.out.println("setPin");
-        int pin = 0;
-        Nasabah instance = new Nasabah();
-        instance.setPin(pin);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        int pin = 1207;
+        Test.setPin(pin);
+
     }
 
     /**
@@ -97,12 +87,9 @@ public class NasabahIT {
     @Test
     public void testGetSaldo() {
         System.out.println("getSaldo");
-        Nasabah instance = new Nasabah();
-        int expResult = 0;
-        int result = instance.getSaldo();
+        int expResult = 50000000;
+        int result = Test.getSaldo();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -111,11 +98,9 @@ public class NasabahIT {
     @Test
     public void testSetSaldo() {
         System.out.println("setSaldo");
-        int saldo = 0;
+        int saldo = 50000000;
         Nasabah instance = new Nasabah();
-        instance.setSaldo(saldo);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        Test.setSaldo(saldo);
     }
 
     /**
@@ -124,12 +109,9 @@ public class NasabahIT {
     @Test
     public void testGetNama() {
         System.out.println("getNama");
-        Nasabah instance = new Nasabah();
-        String expResult = "";
-        String result = instance.getNama();
+        String expResult = "Febrio Ibrahim s";
+        String result = Test.getNama();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -138,11 +120,8 @@ public class NasabahIT {
     @Test
     public void testSetNama() {
         System.out.println("setNama");
-        String nama = "";
-        Nasabah instance = new Nasabah();
-        instance.setNama(nama);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        String nama = "Febrio Ibrahim S";
+        Test.setNama(nama);
     }
     
 }
