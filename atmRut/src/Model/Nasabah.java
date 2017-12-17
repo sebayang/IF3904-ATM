@@ -13,8 +13,7 @@ public class Nasabah {
     private int norek,pin,saldo;
     private String nama;
     
-    public Nasabah (){
-        
+    public Nasabah (){   
     }
 
     public Nasabah(int norek, int pin, int saldo, String nama) {

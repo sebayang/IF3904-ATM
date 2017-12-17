@@ -72,7 +72,7 @@ public class AplikasiIT {
         System.out.println("getNasabahByNorek");
         int norek = 1301154111;
         Aplikasi instance = new Aplikasi();
-        Nasabah expResult = instance.getData().getByNorek(norek);
+        Nasabah expResult = null;
         Nasabah result = instance.getNasabahByNorek(norek);
         assertEquals(expResult, result);
     }

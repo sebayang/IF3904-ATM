@@ -14,8 +14,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import Model.Nasabah;
 import View.Home;
-import java.util.ArrayList;
-import javax.swing.JOptionPane;
 
 public class ControllerHome implements ActionListener {
 

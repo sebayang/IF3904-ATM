@@ -13,9 +13,7 @@ import Model.Aplikasi;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import Model.Nasabah;
-import View.Login;
 import View.Pengecekan;
-import javax.swing.JOptionPane;
 
 public class ControllerPengecekan implements ActionListener {
 
