@@ -5,6 +5,8 @@
  */
 package Controller;
 
+import Model.Aplikasi;
+import Model.Nasabah;
 import java.awt.event.ActionEvent;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -44,11 +46,10 @@ public class ControllerTransferIT {
     @Test
     public void testActionPerformed() {
         System.out.println("actionPerformed");
-        ActionEvent ae = null;
-        ControllerTransfer instance = null;
-        instance.actionPerformed(ae);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        Nasabah nasabah = new Nasabah();
+        Aplikasi palikasi = new Aplikasi();
+        ControllerTransfer instance = new ControllerTransfer(palikasi,nasabah);
+
     }
     
 }

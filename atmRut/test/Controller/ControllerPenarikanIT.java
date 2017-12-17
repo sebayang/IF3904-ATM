@@ -5,6 +5,8 @@
  */
 package Controller;
 
+import Model.Aplikasi;
+import Model.Nasabah;
 import java.awt.event.ActionEvent;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -18,22 +20,22 @@ import static org.junit.Assert.*;
  * @author umann
  */
 public class ControllerPenarikanIT {
-    
+
     public ControllerPenarikanIT() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
@@ -44,11 +46,9 @@ public class ControllerPenarikanIT {
     @Test
     public void testActionPerformed() {
         System.out.println("actionPerformed");
-        ActionEvent ae = null;
-        ControllerPenarikan instance = null;
-        instance.actionPerformed(ae);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        Nasabah nasabah = new Nasabah();
+        Aplikasi aplikasi = new Aplikasi();
+        ControllerPenarikan instance = new ControllerPenarikan(aplikasi,nasabah);
     }
-    
+
 }

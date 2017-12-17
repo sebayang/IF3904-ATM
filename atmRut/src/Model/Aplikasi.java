@@ -52,4 +52,10 @@ public class Aplikasi {
         Aplikasi a = new Aplikasi();
         new ControllerLogin(a);
     }
+
+    public Database getData() {
+        return data;
+    }
+    
+    
 }
